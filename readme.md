@@ -101,7 +101,10 @@ make dowload_pretrain
 ```
 
 ## 5. Compare Inference time with same image
+### Input image
+![alt text](img/dog.png "image")
 
+### Result
 ![alt text](img/compare_inference.png "Compare time inference")
 
 
