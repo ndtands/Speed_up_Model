@@ -1,0 +1,325 @@
+INFO 2022-06-06 15:39:13,013 [4142902042.py:<cell line: 8>:21]
+Time for inference: 0.012606620788574219
+
+INFO 2022-06-06 15:42:14,594 [utils.py:postprocess:37]
+class: Chihuahua , confidence: 81.24636840820312, %, index: 151
+
+INFO 2022-06-06 15:42:14,597 [utils.py:postprocess:37]
+class: miniature pinscher , confidence: 15.077691078186035, %, index: 237
+
+INFO 2022-06-06 15:42:14,599 [utils.py:postprocess:37]
+class: Italian greyhound , confidence: 1.6573545932769775, %, index: 171
+
+INFO 2022-06-06 15:42:14,600 [utils.py:postprocess:37]
+class: toy terrier , confidence: 1.0198899507522583, %, index: 158
+
+INFO 2022-06-06 15:42:14,601 [inference.py:<module>:29]
+Time for inference: 0.0424041748046875
+
+INFO 2022-06-06 15:42:45,967 [utils.py:postprocess:37]
+class: Chihuahua , confidence: 81.24636840820312, %, index: 151
+
+INFO 2022-06-06 15:42:45,970 [utils.py:postprocess:37]
+class: miniature pinscher , confidence: 15.077691078186035, %, index: 237
+
+INFO 2022-06-06 15:42:45,971 [utils.py:postprocess:37]
+class: Italian greyhound , confidence: 1.6573545932769775, %, index: 171
+
+INFO 2022-06-06 15:42:45,972 [utils.py:postprocess:37]
+class: toy terrier , confidence: 1.0198899507522583, %, index: 158
+
+INFO 2022-06-06 15:42:45,973 [inference.py:<module>:29]
+Time for inference:  0.041872 s
+
+INFO 2022-06-06 15:43:46,720 [utils.py:postprocess:37]
+class: Chihuahua , confidence: 81.24636840820312, %, index: 151
+
+INFO 2022-06-06 15:43:46,723 [utils.py:postprocess:37]
+class: miniature pinscher , confidence: 15.077691078186035, %, index: 237
+
+INFO 2022-06-06 15:43:46,724 [utils.py:postprocess:37]
+class: Italian greyhound , confidence: 1.6573545932769775, %, index: 171
+
+INFO 2022-06-06 15:43:46,725 [utils.py:postprocess:37]
+class: toy terrier , confidence: 1.0198899507522583, %, index: 158
+
+INFO 2022-06-06 15:43:46,727 [inference.py:<module>:29]
+Time for inference:  0.048118 s
+
+INFO 2022-06-06 15:45:15,649 [utils.py:postprocess:37]
+class: Chihuahua , confidence: 81.24636840820312, %, index: 151
+
+INFO 2022-06-06 15:45:15,652 [utils.py:postprocess:37]
+class: miniature pinscher , confidence: 15.077691078186035, %, index: 237
+
+INFO 2022-06-06 15:45:15,654 [utils.py:postprocess:37]
+class: Italian greyhound , confidence: 1.6573545932769775, %, index: 171
+
+INFO 2022-06-06 15:45:15,655 [utils.py:postprocess:37]
+class: toy terrier , confidence: 1.0198899507522583, %, index: 158
+
+INFO 2022-06-06 15:45:15,656 [inference.py:<module>:29]
+Time for inference:  0.046484 s
+
+INFO 2022-06-06 15:54:13,267 [test.py:test_speed:19]
+
+                    Batch size: 2 
+                    Time inferene with 100 loop is 1.2635 s
+                    >>>> About: 0.012635 s per 1 loop
+                
+
+INFO 2022-06-06 15:54:42,379 [test.py:test_speed:19]
+
+        Batch size: 2 
+        Time inferene with 100 loop is 1.2546 s
+        >>>> About: 0.012546 s per 1 loop
+    
+
+INFO 2022-06-06 15:54:52,569 [test.py:test_speed:19]
+
+    Batch size: 2 
+    Time inferene with 100 loop is 1.2807 s
+    >>>> About: 0.012807 s per 1 loop
+    
+
+INFO 2022-06-06 15:58:59,563 [test.py:test_speed:20]
+
+    Batch size: 4 
+    Time inferene with 100 loop is 2.1387 s
+    >>>> About: 0.021387 s per 1 loop
+    
+
+INFO 2022-06-06 15:59:22,482 [test.py:test_speed:20]
+
+    Batch size: 8 
+    Time inferene with 20 loop is 0.7326 s
+    >>>> About: 0.036629 s per 1 loop
+    
+
+INFO 2022-06-06 16:06:53,642 [utils.py:postprocess:37]
+class: cup , confidence: 58.57439041137695, %, index: 968
+
+INFO 2022-06-06 16:06:53,645 [utils.py:postprocess:37]
+class: espresso , confidence: 38.98651885986328, %, index: 967
+
+INFO 2022-06-06 16:06:53,646 [utils.py:postprocess:37]
+class: coffee mug , confidence: 2.20611572265625, %, index: 504
+
+INFO 2022-06-06 16:06:53,647 [inference.py:<module>:29]
+Time for inference:  0.043351 s
+
+INFO 2022-06-06 16:08:09,310 [test.py:test_speed:20]
+
+    Batch size: 4 
+    Time inferene with 100 loop is 2.1143 s
+    >>>> About: 0.021143 s per 1 loop
+    
+
+INFO 2022-06-06 16:34:33,055 [utils.py:postprocess:37]
+class: Chihuahua , confidence: 81.24636840820312, %, index: 151
+
+INFO 2022-06-06 16:34:33,060 [utils.py:postprocess:37]
+class: miniature pinscher , confidence: 15.077691078186035, %, index: 237
+
+INFO 2022-06-06 16:34:33,061 [utils.py:postprocess:37]
+class: Italian greyhound , confidence: 1.6573545932769775, %, index: 171
+
+INFO 2022-06-06 16:34:33,063 [utils.py:postprocess:37]
+class: toy terrier , confidence: 1.0198899507522583, %, index: 158
+
+INFO 2022-06-06 16:34:33,064 [inference.py:<module>:29]
+Time for inference:  0.145030 s
+
+INFO 2022-06-06 16:59:05,204 [2565630689.py:convert:19]
+===> build onnx ...
+
+INFO 2022-06-06 16:59:07,190 [2565630689.py:convert:30]
+✅ Convert model pytorch to onnx complete
+
+INFO 2022-06-06 17:00:09,923 [2565630689.py:convert:19]
+===> build onnx ...
+
+INFO 2022-06-06 17:00:11,783 [2565630689.py:convert:30]
+✅ Convert model pytorch to onnx complete
+
+INFO 2022-06-06 17:01:17,110 [1200333086.py:load:37]
+Load onnx done with {self.device}
+
+INFO 2022-06-06 17:01:31,570 [2111965102.py:load:37]
+Load onnx done with cuda
+
+INFO 2022-06-06 17:02:53,201 [2111965102.py:load:37]
+Load onnx done with cuda
+
+INFO 2022-06-06 17:05:17,805 [2111965102.py:load:37]
+Load onnx done with cuda
+
+INFO 2022-06-06 17:05:37,862 [3254488601.py:load:37]
+Load onnx done with cuda
+
+INFO 2022-06-06 17:05:55,915 [4181733994.py:load:37]
+Load onnx done with cuda
+
+INFO 2022-06-06 17:05:56,504 [4181733994.py:postprocess_onnx:75]
+class: Chihuahua , confidence: 0.8124645352363586, %, index: 151
+
+INFO 2022-06-06 17:05:56,506 [4181733994.py:inference:49]
+Time for inference:  0.543981 s
+
+INFO 2022-06-06 17:06:19,349 [21089939.py:load:37]
+Load onnx done with cuda
+
+INFO 2022-06-06 17:06:19,974 [21089939.py:postprocess_onnx:75]
+class: Chihuahua , confidence: 81.24644470214844, %, index: 151
+
+INFO 2022-06-06 17:06:19,976 [21089939.py:postprocess_onnx:75]
+class: miniature pinscher , confidence: 15.077646255493164, %, index: 237
+
+INFO 2022-06-06 17:06:19,978 [21089939.py:postprocess_onnx:75]
+class: Italian greyhound , confidence: 1.657345175743103, %, index: 171
+
+INFO 2022-06-06 17:06:19,980 [21089939.py:postprocess_onnx:75]
+class: toy terrier , confidence: 1.0198869705200195, %, index: 158
+
+INFO 2022-06-06 17:06:19,982 [21089939.py:inference:49]
+Time for inference:  0.551140 s
+
+INFO 2022-06-06 17:07:05,492 [3727547070.py:load:37]
+Load onnx done with cuda
+
+INFO 2022-06-06 17:07:06,109 [3727547070.py:postprocess_onnx:75]
+class: Chihuahua , confidence:  81.2464, %, index: 151
+
+INFO 2022-06-06 17:07:06,113 [3727547070.py:postprocess_onnx:75]
+class: miniature pinscher , confidence:  15.0776, %, index: 237
+
+INFO 2022-06-06 17:07:06,116 [3727547070.py:postprocess_onnx:75]
+class: Italian greyhound , confidence:  1.6573, %, index: 171
+
+INFO 2022-06-06 17:07:06,119 [3727547070.py:postprocess_onnx:75]
+class: toy terrier , confidence:  1.0199, %, index: 158
+
+INFO 2022-06-06 17:07:06,123 [3727547070.py:inference:49]
+Time for inference:  0.584333 s
+
+INFO 2022-06-06 17:14:55,385 [__init__.py:convert:19]
+===> build onnx ...
+
+INFO 2022-06-06 17:14:57,092 [__init__.py:convert:30]
+✅ Convert model pytorch to onnx complete
+
+INFO 2022-06-06 17:20:02,502 [__init__.py:load:37]
+Load onnx done with cuda
+
+INFO 2022-06-06 17:20:39,869 [__init__.py:load:37]
+Load onnx done with cuda
+
+INFO 2022-06-06 17:22:24,344 [__init__.py:load:37]
+Load onnx done with cuda
+
+INFO 2022-06-06 17:22:24,839 [__init__.py:postprocess_onnx:76]
+class: Chihuahua , confidence:  81.2464 %, index: 151
+
+INFO 2022-06-06 17:22:24,844 [__init__.py:postprocess_onnx:76]
+class: miniature pinscher , confidence:  15.0776 %, index: 237
+
+INFO 2022-06-06 17:22:24,845 [__init__.py:postprocess_onnx:76]
+class: Italian greyhound , confidence:  1.6573 %, index: 171
+
+INFO 2022-06-06 17:22:24,846 [__init__.py:postprocess_onnx:76]
+class: toy terrier , confidence:  1.0199 %, index: 158
+
+INFO 2022-06-06 17:22:24,847 [__init__.py:inference:49]
+Time for inference:  0.497503 s
+
+INFO 2022-06-06 17:22:57,886 [utils.py:postprocess:37]
+class: Chihuahua , confidence: 81.24636840820312 %, index: 151
+
+INFO 2022-06-06 17:22:57,889 [utils.py:postprocess:37]
+class: miniature pinscher , confidence: 15.077691078186035 %, index: 237
+
+INFO 2022-06-06 17:22:57,890 [utils.py:postprocess:37]
+class: Italian greyhound , confidence: 1.6573545932769775 %, index: 171
+
+INFO 2022-06-06 17:22:57,891 [utils.py:postprocess:37]
+class: toy terrier , confidence: 1.0198899507522583 %, index: 158
+
+INFO 2022-06-06 17:22:57,892 [inference.py:<module>:28]
+Time for inference:  0.055912 s
+
+INFO 2022-06-06 17:24:56,553 [3000866572.py:load:37]
+Load onnx done with cuda
+
+INFO 2022-06-06 17:25:00,251 [3000866572.py:postprocess_onnx:75]
+class: Chihuahua , confidence:  81.2465 %, index: 151
+
+INFO 2022-06-06 17:25:00,253 [3000866572.py:postprocess_onnx:75]
+class: miniature pinscher , confidence:  15.0776 %, index: 237
+
+INFO 2022-06-06 17:25:00,307 [3000866572.py:postprocess_onnx:75]
+class: Italian greyhound , confidence:  1.6573 %, index: 171
+
+INFO 2022-06-06 17:25:00,309 [3000866572.py:postprocess_onnx:75]
+class: toy terrier , confidence:  1.0199 %, index: 158
+
+INFO 2022-06-06 17:25:00,311 [3000866572.py:inference:49]
+Time for inference:  0.605105 s
+
+INFO 2022-06-06 17:25:04,774 [3000866572.py:postprocess_onnx:75]
+class: Chihuahua , confidence:  81.2465 %, index: 151
+
+INFO 2022-06-06 17:25:04,777 [3000866572.py:postprocess_onnx:75]
+class: miniature pinscher , confidence:  15.0776 %, index: 237
+
+INFO 2022-06-06 17:25:04,779 [3000866572.py:postprocess_onnx:75]
+class: Italian greyhound , confidence:  1.6573 %, index: 171
+
+INFO 2022-06-06 17:25:04,782 [3000866572.py:postprocess_onnx:75]
+class: toy terrier , confidence:  1.0199 %, index: 158
+
+INFO 2022-06-06 17:25:04,785 [3000866572.py:inference:49]
+Time for inference:  0.027165 s
+
+INFO 2022-06-06 17:25:08,203 [3000866572.py:postprocess_onnx:75]
+class: Chihuahua , confidence:  81.2465 %, index: 151
+
+INFO 2022-06-06 17:25:08,205 [3000866572.py:postprocess_onnx:75]
+class: miniature pinscher , confidence:  15.0776 %, index: 237
+
+INFO 2022-06-06 17:25:08,209 [3000866572.py:postprocess_onnx:75]
+class: Italian greyhound , confidence:  1.6573 %, index: 171
+
+INFO 2022-06-06 17:25:08,211 [3000866572.py:postprocess_onnx:75]
+class: toy terrier , confidence:  1.0199 %, index: 158
+
+INFO 2022-06-06 17:25:08,213 [3000866572.py:inference:49]
+Time for inference:  0.023844 s
+
+INFO 2022-06-06 17:25:12,577 [3000866572.py:postprocess_onnx:75]
+class: Chihuahua , confidence:  81.2465 %, index: 151
+
+INFO 2022-06-06 17:25:12,579 [3000866572.py:postprocess_onnx:75]
+class: miniature pinscher , confidence:  15.0776 %, index: 237
+
+INFO 2022-06-06 17:25:12,582 [3000866572.py:postprocess_onnx:75]
+class: Italian greyhound , confidence:  1.6573 %, index: 171
+
+INFO 2022-06-06 17:25:12,585 [3000866572.py:postprocess_onnx:75]
+class: toy terrier , confidence:  1.0199 %, index: 158
+
+INFO 2022-06-06 17:25:12,588 [3000866572.py:inference:49]
+Time for inference:  0.024749 s
+
+INFO 2022-06-06 17:29:03,385 [__init__.py:load:37]
+Load onnx done with cuda
+
+INFO 2022-06-06 17:29:32,085 [__init__.py:load:37]
+Load onnx done with cuda
+
+INFO 2022-06-06 17:29:34,435 [test.py:test_speed:19]
+
+    Batch size: 4 
+    Time inferene with 100 loop is 2.3431 s
+    >>>> About: 0.023431 s per 1 loop
+    
+
