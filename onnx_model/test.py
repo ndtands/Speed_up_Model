@@ -26,7 +26,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Test performance model with model converted to ONNX")
     # Add an argument
     parser.add_argument('--batchsize', type=int, default=4, help="batch size")
-    parser.add_argument('--n_loop', type=int, default=100, help="batch size")
+    parser.add_argument('--n_loop', type=int, default=100, help="num loop")
     
     # Parse the argument
     args = parser.parse_args()
