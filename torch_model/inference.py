@@ -25,5 +25,4 @@ if __name__ == '__main__':
     start = time.time()
     output = model(input)
     postprocess(output_data=output)
-    print('here')
     logger.info(f'Time for inference: {time.time() - start: 0.6f} s')

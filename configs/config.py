@@ -17,8 +17,8 @@ MODELS_DIR = Path(BASE_DIR, 'model')
 #Path
 PATH_CLASSES = Path(BASE_DIR, "imagenet_classes.txt")
 PATH_MODEL_TORCH = Path(MODELS_DIR,'model.pth')
-PATH_MODEL_ONNX = Path(MODELS_DIR,'model.pth')
-PATH_MODEL_TRT = Path(MODELS_DIR,'model.pth')
+PATH_MODEL_ONNX = Path(MODELS_DIR,'model.onnx')
+PATH_MODEL_TRT = Path(MODELS_DIR,'model.trt')
 PATH_IMAGE_DEMO = Path(BASE_DIR,'img/dog.png')
 
 # Create dirs
