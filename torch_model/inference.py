@@ -7,7 +7,7 @@ import time
 
 if __name__ == '__main__':
     # Create the parser
-    parser = argparse.ArgumentParser()
+    parser = argparse.ArgumentParser(description="Inference with pretrain model in pytorch")
     # Add an argument
     parser.add_argument('--imgpath', type=str, default=str(PATH_IMAGE_DEMO), help="path of image", required=False)
 

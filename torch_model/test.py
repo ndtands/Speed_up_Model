@@ -24,7 +24,7 @@ def test_speed(batch: int, loop: int) -> None:
     """)
 if __name__ == '__main__':
      # Create the parser
-    parser = argparse.ArgumentParser()
+    parser = argparse.ArgumentParser(description="Test performance with pretrain model pytorch")
     # Add an argument
     parser.add_argument('--batchsize', type=int, default=4, help="batch size")
     parser.add_argument('--n_loop', type=int, default=100, help="batch size")
