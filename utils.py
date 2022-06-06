@@ -35,6 +35,6 @@ def postprocess(output_data: torch.tensor) -> None:
     while confidences[indices[0][i]] > 0.5:
         class_idx = indices[0][i]
         logger.info(
-            f"class: {classes[class_idx]} , confidence: {confidences[class_idx].item()} %, index: {class_idx.item()}",
+            f"class: {classes[class_idx]} , confidence: {confidences[class_idx].item():0.4f} %, index: {class_idx.item()}",
         )
         i += 1
