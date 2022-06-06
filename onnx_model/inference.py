@@ -5,7 +5,7 @@ import argparse
 
 if __name__ == '__main__':
     # Create the parser
-    parser = argparse.ArgumentParser()
+    parser = argparse.ArgumentParser(description="inference with model converted to ONNX")
     # Add an argument
     parser.add_argument('--path_image', type=str, default=str(PATH_IMAGE_DEMO), help="path of pretrain model", required=False)
 

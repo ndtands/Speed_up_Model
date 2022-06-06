@@ -5,7 +5,7 @@ import argparse
 
 if __name__ == '__main__':
     # Create the parser
-    parser = argparse.ArgumentParser()
+    parser = argparse.ArgumentParser(description="Convert pretrain pytorch to ONNX")
     # Add an argument
     parser.add_argument('--path_torch', type=str, default=str(PATH_MODEL_TORCH), help="path of pretrain model", required=False)
     parser.add_argument('--path_onnx', type=str, default=str(PATH_MODEL_ONNX), help="path of pretrain model", required=False)
