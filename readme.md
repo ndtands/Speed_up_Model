@@ -42,7 +42,13 @@ export C_INCLUDE_PATH=$CUDA_HOME/include:$C_INCLUDE_PATH
 export CPLUS_INCLUDE_PATH=$CUDA_HOME/include:$CPLUS_INCLUDE_PATH
 export LD_LIBRARY_PATH=$CUDA_HOME/lib64:$LD_LIBRARY_PATH
 export LD_RUN_PATH=$CUDA_HOME/lib64:$LD_RUN_PATH
+export PYTHONPATH=.
 ```
+### 1.3. Install pretrain
+```
+make dowload_pretrain
+```
+
 ## 2. Torch model 
 ### 2.1. Test inference with image
 ```
@@ -58,18 +64,38 @@ export LD_RUN_PATH=$CUDA_HOME/lib64:$LD_RUN_PATH
 ## 3. Using ONNX
 ### 3.1. Convert model pytorch to ONNX 
 ```
-    python3 torch_model/convert.py \
+    python3 onnx_model/convert.py \
     --path_torch <image torch model> \
     --path_onnx <name onnx model>
 ``` 
-### 3.2. Test performance with batch size
+### 3.2. Inference with image
 ```
-    python3 torch_model/infernce.py --imgpath <image path>
+    python3 onnx_model/infernce.py --imgpath <image path>
 ```
 
 ### 3.3. Test performance with batch size
 ```
     python3 onnx_model/test.py \
+    --batchsize 4 \
+    --n_loop 100
+```
+
+## 4. Using tensorrt enggine
+### 4.1. Convert onnx to tensorrt 
+```
+    python3 tensorrt_model/convert.py \
+    --path_trt <image tensorrt model> \
+    --path_onnx <name onnx model> \
+    --batch_size <batch size>
+``` 
+### 4.2. Inference with image
+```
+    python3 tensorrt_model/infernce.py --imgpath <image path>
+```
+
+### 4.3. Test performance with batch size
+```
+    python3 tensorrt_model/test.py \
     --batchsize 4 \
     --n_loop 100
 ```
