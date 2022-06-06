@@ -43,6 +43,8 @@ class ONNX_MODEL:
             input = preprocess_image(path_image)
             input = to_numpy(input)
             ort_inputs =  {self.ort_session.get_inputs()[0].name: input}
+            # Because the firt run have time-consuming for warm up system
+            ort_outs = self.ort_session.run(None, ort_inputs)
             start = time.time()
             ort_outs = self.ort_session.run(None, ort_inputs)
             postprocess_onnx(ort_outs[0])
