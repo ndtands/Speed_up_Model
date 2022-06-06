@@ -99,3 +99,12 @@ make dowload_pretrain
     --batchsize 4 \
     --n_loop 100
 ```
+
+## 5. Compare Inference time with same image
+
+![alt text](img/compare_inference.png "Compare time inference")
+
+
+## TO DO
+- Compare time flow batch-size, memory, size model, ....
+- Try implement triton nvidia
