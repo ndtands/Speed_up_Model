@@ -7,7 +7,7 @@
 - GTX 1650 4GB
 - Nvidia-driver: 470 - cuda 11.4
 ### 1.2. Install Some package
-Install [cuda-toolkit 11.4](https://developer.nvidia.com/cuda-11-4-1-download-archive)
+#### Install [cuda-toolkit 11.4](https://developer.nvidia.com/cuda-11-4-1-download-archive)
 ```
 wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/cuda-ubuntu2004.pin
 sudo mv cuda-ubuntu2004.pin /etc/apt/preferences.d/cuda-repository-pin-600
@@ -17,14 +17,14 @@ sudo apt-key add /var/cuda-repo-ubuntu2004-11-4-local/7fa2af80.pub
 sudo apt-get update
 sudo apt-get -y install cuda
 ```
-Install [cuDNN-8.2.4](https://developer.nvidia.com/cudnn)
+#### Install [cuDNN-8.2.4](https://developer.nvidia.com/cudnn)
 ```
 sudo dpkg -i libcudnn8_8.2.4.15-1+cuda11.4_amd64.deb
 sudo dpkg -i libcudnn8-dev_8.2.4.15-1+cuda11.4_amd64.deb
 # Verify install cuDNN
 cat /usr/include/x86_64-linux-gnu/cudnn_v*.h | grep CUDNN_MAJOR -A 2 
 ```
-Install [TensorRT-8.2.0](https://developer.nvidia.com/tensorrt)
+#### Install [TensorRT-8.2.0](https://developer.nvidia.com/tensorrt)
 ```
 sudo dpkg -i nv-tensorrt-repo-ubuntu2004-cuda11.4-trt8.2.0.6-ea-20210922_1-1_amd64.deb
 sudo apt update
@@ -32,7 +32,7 @@ sudo apt install tensorrt
 pip install nvidia-pyindex
 pip install nvidia-tensorrt
 ```
-Add PATH to /.bashrc
+#### Add PATH to /.bashrc
 ```
 nano ~/.bashrc
 export CUDA_HOME=/usr/local/cuda
@@ -44,9 +44,47 @@ export LD_LIBRARY_PATH=$CUDA_HOME/lib64:$LD_LIBRARY_PATH
 export LD_RUN_PATH=$CUDA_HOME/lib64:$LD_RUN_PATH
 export PYTHONPATH=.
 ```
-### 1.3. Install pretrain
+#### Install [container-nvidia](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html)
 ```
-make dowload_pretrain
+curl https://get.docker.com | sh && sudo systemctl --now enable docker
+
+distribution=$(. /etc/os-release;echo $ID$VERSION_ID) \
+    && curl -fsSL https://nvidia.github.io/libnvidia-container/gpgkey | sudo gpg --dearmor -o /usr/share/keyrings/nvidia-container-toolkit-keyring.gpg \
+    && curl -s -L https://nvidia.github.io/libnvidia-container/$distribution/libnvidia-container.list | \
+    sed 's#deb https://#deb [signed-by=/usr/share/keyrings/nvidia-container-toolkit-keyring.gpg] https://#g' | \
+    sudo tee /etc/apt/sources.list.d/nvidia-container-toolkit.list
+
+sudo apt-get update
+sudo apt-get install -y nvidia-docker2
+sudo systemctl restart docker
+# Verify install
+sudo docker run --rm --gpus all nvidia/cuda:11.4.0-base-ubuntu20.04 nvidia-smi
+```
+#### Install [triton-server](https://github.com/triton-inference-server/server/blob/main/docs/quickstart.md#install-triton-docker-image)
+```
+docker pull nvcr.io/nvidia/tritonserver:22.05-py3
+docker pull nvcr.io/nvidia/tritonserver:22.05-py3-sdk
+
+# verify triton-server
+git clone https://github.com/triton-inference-server/server.git
+cd docs/examples
+./fetch_models.sh
+
+## 1.Run triton-server
+sudo docker run --gpus=1 --rm -p8000:8000 -p8001:8001 -p8002:8002 \
+    -v<absolute path>docs/examples/model_repository:/models \
+    nvcr.io/nvidia/tritonserver:22.05-py3 tritonserver \
+    --model-repository=/models
+
+## 2.Open new terminal
+docker run -it --rm --net=host nvcr.io/nvidia/tritonserver:22.05-py3-sdk
+
+## 3.Run inference
+/workspace/install/bin/image_client -m densenet_onnx -c 3 -s INCEPTION /workspace/images/mug.jpg
+```
+### 1.3. Preparation
+```
+make setup
 ```
 
 ## 2. Torch model 
@@ -100,14 +138,41 @@ make dowload_pretrain
     --n_loop 100
 ```
 
-## 5. Compare Inference time with same image
+## 5. Using triton server
+- You can config file **config.pbtxt** for batch_size, input, ouput, ... More config you can see in [1](https://github.com/triton-inference-server/backend/blob/main/README.md#backends) or [2](https://github.com/triton-inference-server/server/blob/main/docs/model_configuration.md) </br>
+- To start, you need run triton server
+    ```
+    make run_triton_server
+    ```
+### 5.1. Inference with image
+```
+    python3 triton_model/infernce.py --imgpath <image path>
+```
+### 5.2. Test performane with batch size
+```
+    python3 triton_model/test.py \
+    --batchsize 4 \
+    --n_loop 100
+```
+You need stop container triton server
+```
+make stop_triton_server
+```
+
+## 6. Compare Inference time with same image
 ### Input image
 ![alt text](img/dog.png "image")
 
 ### Result
-![alt text](img/compare_inference.png "Compare time inference")
+![alt text](img/compare-inference.png "Compare time inference")
 
+### Table time
+| Type model  | Time  (s)   |
+| ----------- | ----------- |
+| Pretrain    | 0.0410      |
+| ONNX        | 0.0162      |
+| TensorRT    | **0.0147**  |
+| Triton      | 0.0152      |
 
 ## TO DO
 - Compare time flow batch-size, memory, size model, ....
-- Try implement triton nvidia
