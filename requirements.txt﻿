@@ -1,0 +1,9 @@
+rich
+onnxruntime
+onnxruntime-gpu
+numpy
+argparse
+pycuda
+tritonclient
+pandas
+opencv-python
