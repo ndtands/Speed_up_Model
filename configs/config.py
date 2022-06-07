@@ -14,8 +14,8 @@ BASE_DIR = Path(__file__).parent.parent.absolute()
 LOGS_DIR = Path(BASE_DIR, "logs")
 CONFIG_DIR = Path(BASE_DIR, "configs")
 MODELS_TORCH_DIR = Path(BASE_DIR, 'model_repository/model_torch/1')
-MODELS_ONNX_DIR = Path(BASE_DIR, 'model_repository/model_onnx/1')
-MODELS_TRT_DIR = Path(BASE_DIR, 'model_repository/model_trt/1')
+MODELS_ONNX_DIR = Path(BASE_DIR, 'model/model_onnx/')
+MODELS_TRT_DIR = Path(BASE_DIR, 'model/model_trt/')
 
 # Create dirs
 LOGS_DIR.mkdir(parents=True, exist_ok=True)
@@ -25,9 +25,9 @@ MODELS_TRT_DIR.mkdir(parents=True, exist_ok=True)
 
 #Path
 PATH_CLASSES = Path(BASE_DIR, "imagenet_classes.txt")
-PATH_MODEL_TORCH = Path(MODELS_TORCH_DIR,'model.pth')
+PATH_MODEL_TORCH = Path(MODELS_TORCH_DIR,'model.pt')
 PATH_MODEL_ONNX = Path(MODELS_ONNX_DIR,'model.onnx')
-PATH_MODEL_TRT = Path(MODELS_TRT_DIR,'model.trt')
+PATH_MODEL_TRT = Path(MODELS_TRT_DIR,'model.plan')
 PATH_IMAGE_DEMO = Path(BASE_DIR,'img/dog.png')
 
 
