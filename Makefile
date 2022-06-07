@@ -1,6 +1,8 @@
 setup:
 	python -m pip install --upgrade pip
 	pip install -r requirements.txt
+	pip install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu113
+	python3 -m pip install 'pycuda<2021.1'
 	python3 get_model.py
 
 run_triton_server:
