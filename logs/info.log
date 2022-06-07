@@ -1209,3 +1209,303 @@ class: toy terrier , confidence: 1.0199 %, index: 158
 INFO 2022-06-07 17:27:25,947 [inference.py:<module>:32]
 Time for inference:  0.015226 s
 
+INFO 2022-06-07 21:48:22,250 [test.py:test_speed:22]
+
+    Batch size: 4 
+    Time inferene with 100 loop is 2.1700 s
+    >>>> About: 0.021700 s per 1 loop
+    
+
+INFO 2022-06-07 21:49:19,037 [test.py:test_speed:22]
+
+    Batch size: 4 
+    Time inferene with 100 loop is 2.1272 s
+    >>>> About: 0.021272 s per 1 loop
+    
+
+INFO 2022-06-07 21:50:38,934 [test.py:test_speed:22]
+
+    Batch size: 4 
+    Time inferene with 100 loop is 2.1298 s
+    >>>> About: 0.021298 s per 1 loop
+    
+
+INFO 2022-06-07 21:53:02,038 [4021296368.py:test_speed:19]
+
+    Batch size: 4 
+    Time inferene with 100 loop is 2.1076 s
+    >>>> About: 0.021076 s per 1 loop
+    
+
+INFO 2022-06-07 21:53:33,417 [2443942387.py:test_speed:19]
+
+    Batch size: 1 
+    Time inferene with 100 loop is 0.8375 s
+    >>>> About: 0.008375 s per 1 loop
+    
+
+INFO 2022-06-07 21:54:28,727 [1677535356.py:test_speed:19]
+
+    Batch size: 2 
+    Time inferene with 100 loop is 1.2897 s
+    >>>> About: 0.012897 s per 1 loop
+    
+
+INFO 2022-06-07 21:55:00,128 [4021296368.py:test_speed:19]
+
+    Batch size: 4 
+    Time inferene with 100 loop is 2.0962 s
+    >>>> About: 0.020962 s per 1 loop
+    
+
+INFO 2022-06-07 21:55:10,589 [4021296368.py:test_speed:19]
+
+    Batch size: 4 
+    Time inferene with 100 loop is 2.1182 s
+    >>>> About: 0.021182 s per 1 loop
+    
+
+INFO 2022-06-07 21:56:21,246 [578231317.py:test_speed:19]
+
+    Batch size: 8 
+    Time inferene with 100 loop is 4.1001 s
+    >>>> About: 0.041001 s per 1 loop
+    
+
+INFO 2022-06-07 21:57:05,491 [2629808967.py:test_speed:19]
+
+    Batch size: 16 
+    Time inferene with 100 loop is 6.9211 s
+    >>>> About: 0.069211 s per 1 loop
+    
+
+INFO 2022-06-07 21:57:47,436 [2559357562.py:test_speed:19]
+
+    Batch size: 24 
+    Time inferene with 100 loop is 10.7489 s
+    >>>> About: 0.107489 s per 1 loop
+    
+
+INFO 2022-06-07 21:59:42,982 [__init__.py:load:37]
+Load onnx done with cuda
+
+INFO 2022-06-07 21:59:44,835 [2883874147.py:test_speed:18]
+
+    Batch size: 1 
+    Time inferene with 100 loop is 1.8459 s
+    >>>> About: 0.018459 s per 1 loop
+    
+
+INFO 2022-06-07 22:00:20,881 [__init__.py:load:37]
+Load onnx done with cuda
+
+INFO 2022-06-07 22:00:22,559 [1185592419.py:test_speed:18]
+
+    Batch size: 2 
+    Time inferene with 100 loop is 1.6703 s
+    >>>> About: 0.016703 s per 1 loop
+    
+
+INFO 2022-06-07 22:00:47,550 [__init__.py:load:37]
+Load onnx done with cuda
+
+INFO 2022-06-07 22:00:49,953 [3258891630.py:test_speed:18]
+
+    Batch size: 4 
+    Time inferene with 100 loop is 2.3925 s
+    >>>> About: 0.023925 s per 1 loop
+    
+
+INFO 2022-06-07 22:01:16,439 [__init__.py:load:37]
+Load onnx done with cuda
+
+INFO 2022-06-07 22:01:20,314 [2438245524.py:test_speed:18]
+
+    Batch size: 8 
+    Time inferene with 100 loop is 3.8599 s
+    >>>> About: 0.038599 s per 1 loop
+    
+
+INFO 2022-06-07 22:01:55,984 [__init__.py:load:37]
+Load onnx done with cuda
+
+INFO 2022-06-07 22:02:02,479 [3125992713.py:test_speed:18]
+
+    Batch size: 16 
+    Time inferene with 100 loop is 6.4735 s
+    >>>> About: 0.064735 s per 1 loop
+    
+
+INFO 2022-06-07 22:02:39,236 [__init__.py:load:37]
+Load onnx done with cuda
+
+INFO 2022-06-07 22:02:48,609 [170935907.py:test_speed:18]
+
+    Batch size: 24 
+    Time inferene with 100 loop is 9.3427 s
+    >>>> About: 0.093427 s per 1 loop
+    
+
+INFO 2022-06-07 22:03:14,997 [__init__.py:load:37]
+Load onnx done with cuda
+
+INFO 2022-06-07 22:03:36,904 [346807158.py:test_speed:18]
+
+    Batch size: 32 
+    Time inferene with 100 loop is 21.8661 s
+    >>>> About: 0.218661 s per 1 loop
+    
+
+INFO 2022-06-07 22:05:35,037 [1460358356.py:<cell line: 8>:12]
+✅ Load tensorrt engine done
+
+INFO 2022-06-07 22:05:41,277 [1460358356.py:<cell line: 8>:12]
+✅ Load tensorrt engine done
+
+INFO 2022-06-07 22:05:41,782 [1460358356.py:<cell line: 8>:19]
+
+    Batch size: 1 
+    Time inferene with 100 loop is 0.4960 s
+    >>>> About: 0.004960 s per 1 loop
+    
+
+INFO 2022-06-07 22:06:17,286 [1527880213.py:<cell line: 8>:12]
+✅ Load tensorrt engine done
+
+INFO 2022-06-07 22:06:17,911 [1527880213.py:<cell line: 8>:19]
+
+    Batch size: 2 
+    Time inferene with 100 loop is 0.6160 s
+    >>>> About: 0.006160 s per 1 loop
+    
+
+INFO 2022-06-07 22:06:36,877 [838996783.py:<cell line: 8>:12]
+✅ Load tensorrt engine done
+
+INFO 2022-06-07 22:06:37,784 [838996783.py:<cell line: 8>:19]
+
+    Batch size: 4 
+    Time inferene with 100 loop is 0.8945 s
+    >>>> About: 0.008945 s per 1 loop
+    
+
+INFO 2022-06-07 22:06:54,914 [3930734436.py:<cell line: 8>:12]
+✅ Load tensorrt engine done
+
+INFO 2022-06-07 22:06:56,615 [3930734436.py:<cell line: 8>:19]
+
+    Batch size: 8 
+    Time inferene with 100 loop is 1.6826 s
+    >>>> About: 0.016826 s per 1 loop
+    
+
+INFO 2022-06-07 22:07:15,392 [426449882.py:<cell line: 8>:12]
+✅ Load tensorrt engine done
+
+INFO 2022-06-07 22:07:18,361 [426449882.py:<cell line: 8>:19]
+
+    Batch size: 16 
+    Time inferene with 100 loop is 2.9445 s
+    >>>> About: 0.029445 s per 1 loop
+    
+
+INFO 2022-06-07 22:07:33,733 [1620013645.py:<cell line: 8>:12]
+✅ Load tensorrt engine done
+
+INFO 2022-06-07 22:07:38,123 [1620013645.py:<cell line: 8>:19]
+
+    Batch size: 24 
+    Time inferene with 100 loop is 4.3545 s
+    >>>> About: 0.043545 s per 1 loop
+    
+
+INFO 2022-06-07 22:07:55,081 [242108115.py:<cell line: 8>:12]
+✅ Load tensorrt engine done
+
+INFO 2022-06-07 22:08:00,844 [242108115.py:<cell line: 8>:19]
+
+    Batch size: 32 
+    Time inferene with 100 loop is 5.7186 s
+    >>>> About: 0.057186 s per 1 loop
+    
+
+INFO 2022-06-07 22:09:40,451 [1069008425.py:<cell line: 10>:20]
+✅ Load triton client done
+
+INFO 2022-06-07 22:09:42,294 [1069008425.py:<cell line: 10>:25]
+
+    Batch size: 1 
+    Time inferene with 100 loop is 1.8328 s
+    >>>> About: 0.018328 s per 1 loop
+    
+
+INFO 2022-06-07 22:10:15,212 [3685875240.py:<cell line: 10>:20]
+✅ Load triton client done
+
+INFO 2022-06-07 22:10:16,665 [3685875240.py:<cell line: 10>:25]
+
+    Batch size: 2 
+    Time inferene with 100 loop is 1.4390 s
+    >>>> About: 0.014390 s per 1 loop
+    
+
+INFO 2022-06-07 22:10:40,287 [1163935773.py:<cell line: 10>:20]
+✅ Load triton client done
+
+INFO 2022-06-07 22:10:42,479 [1163935773.py:<cell line: 10>:25]
+
+    Batch size: 4 
+    Time inferene with 100 loop is 2.1832 s
+    >>>> About: 0.021832 s per 1 loop
+    
+
+INFO 2022-06-07 22:10:59,445 [3930759589.py:<cell line: 10>:20]
+✅ Load triton client done
+
+INFO 2022-06-07 22:11:03,179 [3930759589.py:<cell line: 10>:25]
+
+    Batch size: 8 
+    Time inferene with 100 loop is 3.7238 s
+    >>>> About: 0.037238 s per 1 loop
+    
+
+INFO 2022-06-07 22:11:25,717 [2220311039.py:<cell line: 10>:20]
+✅ Load triton client done
+
+INFO 2022-06-07 22:11:32,591 [2220311039.py:<cell line: 10>:25]
+
+    Batch size: 16 
+    Time inferene with 100 loop is 6.8648 s
+    >>>> About: 0.068648 s per 1 loop
+    
+
+INFO 2022-06-07 22:11:51,474 [3313697619.py:<cell line: 10>:20]
+✅ Load triton client done
+
+INFO 2022-06-07 22:12:01,794 [3313697619.py:<cell line: 10>:25]
+
+    Batch size: 24 
+    Time inferene with 100 loop is 10.3113 s
+    >>>> About: 0.103113 s per 1 loop
+    
+
+INFO 2022-06-07 22:12:17,110 [3864000324.py:<cell line: 10>:20]
+✅ Load triton client done
+
+INFO 2022-06-07 22:12:31,092 [3864000324.py:<cell line: 10>:25]
+
+    Batch size: 32 
+    Time inferene with 100 loop is 13.9756 s
+    >>>> About: 0.139756 s per 1 loop
+    
+
+INFO 2022-06-07 22:13:05,150 [2220311039.py:<cell line: 10>:20]
+✅ Load triton client done
+
+INFO 2022-06-07 22:13:12,445 [2220311039.py:<cell line: 10>:25]
+
+    Batch size: 16 
+    Time inferene with 100 loop is 7.2864 s
+    >>>> About: 0.072864 s per 1 loop
+    
+
