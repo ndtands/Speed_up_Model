@@ -1,4 +1,3 @@
-from cv2 import log
 from utils import *
 from configs.config import PATH_IMAGE_DEMO, PATH_MODEL_TORCH
 from configs.config import logger
