@@ -5,6 +5,7 @@
 import logging
 import sys
 from pathlib import Path
+from pyrsistent import v
 from rich.logging import RichHandler
 import logging.config as lcfg
 
@@ -12,18 +13,24 @@ import logging.config as lcfg
 BASE_DIR = Path(__file__).parent.parent.absolute()
 LOGS_DIR = Path(BASE_DIR, "logs")
 CONFIG_DIR = Path(BASE_DIR, "configs")
-MODELS_DIR = Path(BASE_DIR, 'model')
-
-#Path
-PATH_CLASSES = Path(BASE_DIR, "imagenet_classes.txt")
-PATH_MODEL_TORCH = Path(MODELS_DIR,'model.pth')
-PATH_MODEL_ONNX = Path(MODELS_DIR,'model.onnx')
-PATH_MODEL_TRT = Path(MODELS_DIR,'model.trt')
-PATH_IMAGE_DEMO = Path(BASE_DIR,'img/dog.png')
+MODELS_TORCH_DIR = Path(BASE_DIR, 'model_repository/model_torch/1')
+MODELS_ONNX_DIR = Path(BASE_DIR, 'model_repository/model_onnx/1')
+MODELS_TRT_DIR = Path(BASE_DIR, 'model_repository/model_trt/1')
 
 # Create dirs
 LOGS_DIR.mkdir(parents=True, exist_ok=True)
-MODELS_DIR.mkdir(parents=True, exist_ok=True)
+MODELS_ONNX_DIR.mkdir(parents=True, exist_ok=True)
+MODELS_TORCH_DIR.mkdir(parents=True, exist_ok=True)
+MODELS_TRT_DIR.mkdir(parents=True, exist_ok=True)
+
+#Path
+PATH_CLASSES = Path(BASE_DIR, "imagenet_classes.txt")
+PATH_MODEL_TORCH = Path(MODELS_TORCH_DIR,'model.pth')
+PATH_MODEL_ONNX = Path(MODELS_ONNX_DIR,'model.onnx')
+PATH_MODEL_TRT = Path(MODELS_TRT_DIR,'model.trt')
+PATH_IMAGE_DEMO = Path(BASE_DIR,'img/dog.png')
+
+
 
 # Logger
 logging_config = {
