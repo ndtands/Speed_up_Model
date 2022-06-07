@@ -17,6 +17,7 @@ if __name__ =='__main__':
     logger.info(">>>>> TensorRt engine <<<<<")
     logger.info("✅ Load tensorrt engine done")
     input = preprocess_image(args.path_image).numpy()
+    
     start = time.time()
     outputs = net(np.ascontiguousarray(input))
     result = Resnet.postprocess(outputs)
