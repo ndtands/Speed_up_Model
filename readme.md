@@ -174,5 +174,20 @@ make stop_triton_server
 | TensorRT    | **0.0147**  |
 | Triton      | 0.0152      |
 
-## TO DO
-- Compare time flow batch-size, memory, size model, ....
+## 7. Compare performance with many batch size 
+
+<center>
+
+| Batch-size | pretrain pytorch (102,6 MB ) |            | ONNX (102,1 MB) |            | TensoRT (60,8 MB ) |            | Trition Server (ONNX) |            |
+|------------|------------------------------|------------|-----------------|------------|--------------------|------------|-----------------------|------------|
+|            | Time (s)                     | Memory GPU | Time (s)        | Memory GPU | Time (s)           | Memory GPU | Time (s)              | Memory GPU |
+| 1          | 0.008375                     | 1450MB     | 0.018459        | 2121MB     | 0.004960           | 667MB      | 0.018328              | 911MB      |
+| 2          | 0.012897                     | 1542MB     | 0.016703        | 2121MB     | 0.006160           | 667MB      | 0.014390              | 975MB      |
+| 4          | 0.021182                     | 1668MB     | 0.023925        | 2121MB     | 0.008945           | 667MB      | 0.021832              | 975MB      |
+| 8          | 0.041001                     | 2054MB     | 0.038599        | 2377MB     | 0.016826           | 667MB      | 0.037238              | 1103MB     |
+| 16         | 0.069211                     | 2728MB     | 0.064735        | 2377MB     | 0.029445           | 667MB      | 0.068648              | 1359MB     |
+| 24         | 0.107489                     | 3366MB     | 0.093427        | 2377MB     | 0.043545           | 667MB      | 0.103113              | 1359MB     |
+| 32         | X                            | OUT        | 0.218661        | 2889MB     | 0.057186           | 667MB      | 0.139756              | 1871MB     |
+
+</center>
+=> TensorRT is the best 😀
