@@ -676,3 +676,224 @@ INFO 2022-06-07 15:55:54,983 [test.py:<module>:25]
     >>>> About: 0.056553 s per 1 loop
     
 
+INFO 2022-06-07 16:35:18,753 [test.py:<module>:18]
+
+
+INFO 2022-06-07 16:35:18,765 [test.py:<module>:25]
+✅ Load triton client done
+
+INFO 2022-06-07 16:35:20,921 [test.py:<module>:30]
+
+    Batch size: 4 
+    Time inferene with 100 loop is 2.1548 s
+    >>>> About: 0.021548 s per 1 loop
+    
+
+INFO 2022-06-07 16:38:55,660 [test.py:<module>:25]
+✅ Load triton client done
+
+INFO 2022-06-07 16:38:57,585 [test.py:<module>:30]
+
+    Batch size: 4 
+    Time inferene with 100 loop is 1.9204 s
+    >>>> About: 0.019204 s per 1 loop
+    
+
+INFO 2022-06-07 16:39:05,760 [inference.py:<module>:17]
+>>>>> Triton server <<<<<
+
+INFO 2022-06-07 16:39:13,614 [inference.py:<module>:17]
+>>>>> Triton server <<<<<
+
+INFO 2022-06-07 16:39:13,618 [inference.py:<module>:22]
+✅ Load triton client done
+
+INFO 2022-06-07 16:39:13,780 [inference.py:<module>:28]
+Time for inference:  0.157799 s
+
+INFO 2022-06-07 16:39:36,962 [inference.py:<module>:17]
+>>>>> Triton server <<<<<
+
+INFO 2022-06-07 16:39:36,964 [inference.py:<module>:22]
+✅ Load triton client done
+
+INFO 2022-06-07 16:39:36,996 [inference.py:<module>:29]
+Time for inference:  0.027035 s
+
+INFO 2022-06-07 16:40:12,795 [inference.py:<module>:17]
+>>>>> Triton server <<<<<
+
+INFO 2022-06-07 16:40:12,798 [inference.py:<module>:22]
+✅ Load triton client done
+
+INFO 2022-06-07 16:40:12,832 [utils.py:postprocess:37]
+class: Chihuahua , confidence: 81.2464 %, index: 151
+
+INFO 2022-06-07 16:40:12,833 [utils.py:postprocess:37]
+class: miniature pinscher , confidence: 15.0776 %, index: 237
+
+INFO 2022-06-07 16:40:12,835 [utils.py:postprocess:37]
+class: Italian greyhound , confidence: 1.6573 %, index: 171
+
+INFO 2022-06-07 16:40:12,836 [utils.py:postprocess:37]
+class: toy terrier , confidence: 1.0199 %, index: 158
+
+INFO 2022-06-07 16:40:12,837 [inference.py:<module>:30]
+Time for inference:  0.034474 s
+
+INFO 2022-06-07 16:40:35,017 [inference.py:<module>:17]
+>>>>> Triton server <<<<<
+
+INFO 2022-06-07 16:40:35,020 [inference.py:<module>:22]
+✅ Load triton client done
+
+INFO 2022-06-07 16:40:35,048 [utils.py:postprocess:37]
+class: Chihuahua , confidence: 81.2464 %, index: 151
+
+INFO 2022-06-07 16:40:35,050 [utils.py:postprocess:37]
+class: miniature pinscher , confidence: 15.0776 %, index: 237
+
+INFO 2022-06-07 16:40:35,051 [utils.py:postprocess:37]
+class: Italian greyhound , confidence: 1.6573 %, index: 171
+
+INFO 2022-06-07 16:40:35,052 [utils.py:postprocess:37]
+class: toy terrier , confidence: 1.0199 %, index: 158
+
+INFO 2022-06-07 16:40:35,054 [inference.py:<module>:30]
+Time for inference:  0.029452 s
+
+INFO 2022-06-07 16:41:28,055 [inference.py:<module>:17]
+>>>>> Triton server <<<<<
+
+INFO 2022-06-07 16:41:28,057 [inference.py:<module>:22]
+✅ Load triton client done
+
+INFO 2022-06-07 16:41:28,100 [utils.py:postprocess:37]
+class: Chihuahua , confidence: 81.2464 %, index: 151
+
+INFO 2022-06-07 16:41:28,102 [utils.py:postprocess:37]
+class: miniature pinscher , confidence: 15.0776 %, index: 237
+
+INFO 2022-06-07 16:41:28,103 [utils.py:postprocess:37]
+class: Italian greyhound , confidence: 1.6573 %, index: 171
+
+INFO 2022-06-07 16:41:28,104 [utils.py:postprocess:37]
+class: toy terrier , confidence: 1.0199 %, index: 158
+
+INFO 2022-06-07 16:41:28,104 [inference.py:<module>:33]
+Time for inference:  0.015692 s
+
+INFO 2022-06-07 16:41:42,244 [inference.py:<module>:17]
+>>>>> Triton server <<<<<
+
+INFO 2022-06-07 16:41:42,247 [inference.py:<module>:22]
+✅ Load triton client done
+
+INFO 2022-06-07 16:41:42,275 [utils.py:postprocess:37]
+class: Chihuahua , confidence: 81.2464 %, index: 151
+
+INFO 2022-06-07 16:41:42,277 [utils.py:postprocess:37]
+class: miniature pinscher , confidence: 15.0776 %, index: 237
+
+INFO 2022-06-07 16:41:42,278 [utils.py:postprocess:37]
+class: Italian greyhound , confidence: 1.6573 %, index: 171
+
+INFO 2022-06-07 16:41:42,280 [utils.py:postprocess:37]
+class: toy terrier , confidence: 1.0199 %, index: 158
+
+INFO 2022-06-07 16:41:42,281 [inference.py:<module>:32]
+Time for inference:  0.017038 s
+
+INFO 2022-06-07 16:42:26,989 [inference.py:<module>:17]
+>>>>> Triton server <<<<<
+
+INFO 2022-06-07 16:42:26,992 [inference.py:<module>:22]
+✅ Load triton client done
+
+INFO 2022-06-07 16:42:27,035 [utils.py:postprocess:37]
+class: Chihuahua , confidence: 81.2464 %, index: 151
+
+INFO 2022-06-07 16:42:27,037 [utils.py:postprocess:37]
+class: miniature pinscher , confidence: 15.0776 %, index: 237
+
+INFO 2022-06-07 16:42:27,039 [utils.py:postprocess:37]
+class: Italian greyhound , confidence: 1.6573 %, index: 171
+
+INFO 2022-06-07 16:42:27,041 [utils.py:postprocess:37]
+class: toy terrier , confidence: 1.0199 %, index: 158
+
+INFO 2022-06-07 16:42:27,042 [inference.py:<module>:32]
+Time for inference:  0.019913 s
+
+INFO 2022-06-07 16:44:42,535 [inference.py:<module>:17]
+>>>>> Triton server <<<<<
+
+INFO 2022-06-07 16:44:42,537 [inference.py:<module>:22]
+✅ Load triton client done
+
+INFO 2022-06-07 16:44:42,579 [utils.py:postprocess:37]
+class: Chihuahua , confidence: 81.2464 %, index: 151
+
+INFO 2022-06-07 16:44:42,580 [utils.py:postprocess:37]
+class: miniature pinscher , confidence: 15.0776 %, index: 237
+
+INFO 2022-06-07 16:44:42,581 [utils.py:postprocess:37]
+class: Italian greyhound , confidence: 1.6573 %, index: 171
+
+INFO 2022-06-07 16:44:42,582 [utils.py:postprocess:37]
+class: toy terrier , confidence: 1.0199 %, index: 158
+
+INFO 2022-06-07 16:44:55,323 [inference.py:<module>:17]
+>>>>> Triton server <<<<<
+
+INFO 2022-06-07 16:44:55,326 [inference.py:<module>:22]
+✅ Load triton client done
+
+INFO 2022-06-07 16:44:55,356 [utils.py:postprocess:37]
+class: Chihuahua , confidence: 81.2464 %, index: 151
+
+INFO 2022-06-07 16:44:55,358 [utils.py:postprocess:37]
+class: miniature pinscher , confidence: 15.0776 %, index: 237
+
+INFO 2022-06-07 16:44:55,359 [utils.py:postprocess:37]
+class: Italian greyhound , confidence: 1.6573 %, index: 171
+
+INFO 2022-06-07 16:44:55,360 [utils.py:postprocess:37]
+class: toy terrier , confidence: 1.0199 %, index: 158
+
+INFO 2022-06-07 16:44:55,362 [utils.py:postprocess:37]
+class: Chihuahua , confidence: 81.2464 %, index: 151
+
+INFO 2022-06-07 16:44:55,364 [utils.py:postprocess:37]
+class: miniature pinscher , confidence: 15.0776 %, index: 237
+
+INFO 2022-06-07 16:44:55,365 [utils.py:postprocess:37]
+class: Italian greyhound , confidence: 1.6573 %, index: 171
+
+INFO 2022-06-07 16:44:55,367 [utils.py:postprocess:37]
+class: toy terrier , confidence: 1.0199 %, index: 158
+
+INFO 2022-06-07 16:44:55,368 [inference.py:<module>:33]
+Time for inference:  0.022664 s
+
+INFO 2022-06-07 16:45:02,932 [inference.py:<module>:17]
+>>>>> Triton server <<<<<
+
+INFO 2022-06-07 16:45:02,935 [inference.py:<module>:22]
+✅ Load triton client done
+
+INFO 2022-06-07 16:45:02,962 [utils.py:postprocess:37]
+class: Chihuahua , confidence: 81.2464 %, index: 151
+
+INFO 2022-06-07 16:45:02,964 [utils.py:postprocess:37]
+class: miniature pinscher , confidence: 15.0776 %, index: 237
+
+INFO 2022-06-07 16:45:02,965 [utils.py:postprocess:37]
+class: Italian greyhound , confidence: 1.6573 %, index: 171
+
+INFO 2022-06-07 16:45:02,966 [utils.py:postprocess:37]
+class: toy terrier , confidence: 1.0199 %, index: 158
+
+INFO 2022-06-07 16:45:02,967 [inference.py:<module>:32]
+Time for inference:  0.016931 s
+
