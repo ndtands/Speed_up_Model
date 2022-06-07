@@ -178,7 +178,7 @@ make stop_triton_server
 
 <center>
 
-| Batch-size | pretrain pytorch (102,6 MB ) |            | ONNX (102,1 MB) |            | TensoRT (60,8 MB ) |            | Trition Server (ONNX) |            |
+| Batch-size | pretrain pytorch (102,6 MB ) |            | ONNX (102,1 MB) |            | TensorRT (60,8 MB ) |            | Triton Server (ONNX) |            |
 |------------|------------------------------|------------|-----------------|------------|--------------------|------------|-----------------------|------------|
 |            | Time (s)                     | Memory GPU | Time (s)        | Memory GPU | Time (s)           | Memory GPU | Time (s)              | Memory GPU |
 | 1          | 0.008375                     | 1450MB     | 0.018459        | 2121MB     | 0.004960           | 667MB      | 0.018328              | 911MB      |
