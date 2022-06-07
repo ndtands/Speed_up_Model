@@ -1,2 +1,4 @@
-model/*
+model_repository/model_onnx/1/*
+model_repository/model_torch/1/*
+model_repository/model_trt/1/*
 */__pycache__
