@@ -1,3 +1,6 @@
 model_repository/model_onnx/1/*
 model/*
 */__pycache__
+.git
+.vscode
+__pycache__
