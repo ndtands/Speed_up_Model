@@ -13,8 +13,8 @@ import logging.config as lcfg
 BASE_DIR = Path(__file__).parent.parent.absolute()
 LOGS_DIR = Path(BASE_DIR, "logs")
 CONFIG_DIR = Path(BASE_DIR, "configs")
-MODELS_TORCH_DIR = Path(BASE_DIR, 'model_repository/model_torch/1')
-MODELS_ONNX_DIR = Path(BASE_DIR, 'model/model_onnx/')
+MODELS_TORCH_DIR = Path(BASE_DIR, 'model/model_torch/')
+MODELS_ONNX_DIR = Path(BASE_DIR, 'model_repository/model_onnx/1')
 MODELS_TRT_DIR = Path(BASE_DIR, 'model/model_trt/')
 
 # Create dirs
