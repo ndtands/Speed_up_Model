@@ -1,6 +1,6 @@
 name: "model_onnx"
 platform: "onnxruntime_onnx"
-max_batch_size : 8
+max_batch_size : 32
 input [
   {
     name: "input"
