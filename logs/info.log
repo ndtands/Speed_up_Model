@@ -551,3 +551,128 @@ class: toy terrier , confidence: 1.0030 %, index: 158
 INFO 2022-06-06 23:02:41,749 [inference.py:<module>:24]
 Time for inference:  0.013857 s
 
+INFO 2022-06-07 14:48:04,250 [test.py:<module>:18]
+✅ Load tensorrt engine done
+
+INFO 2022-06-07 14:48:10,014 [test.py:<module>:25]
+
+    Batch size: 32 
+    Time inferene with 100 loop is 5.6301 s
+    >>>> About: 0.056301 s per 1 loop
+    
+
+INFO 2022-06-07 15:47:25,297 [inference.py:<module>:19]
+>>>>> Pretrain model <<<<<
+
+INFO 2022-06-07 15:47:28,919 [utils.py:postprocess:37]
+class: Chihuahua , confidence: 81.2464 %, index: 151
+
+INFO 2022-06-07 15:47:28,921 [utils.py:postprocess:37]
+class: miniature pinscher , confidence: 15.0777 %, index: 237
+
+INFO 2022-06-07 15:47:28,922 [utils.py:postprocess:37]
+class: Italian greyhound , confidence: 1.6574 %, index: 171
+
+INFO 2022-06-07 15:47:28,923 [utils.py:postprocess:37]
+class: toy terrier , confidence: 1.0199 %, index: 158
+
+INFO 2022-06-07 15:47:28,924 [inference.py:<module>:30]
+Time for inference:  0.111649 s
+
+INFO 2022-06-07 15:47:43,454 [test.py:test_speed:20]
+
+    Batch size: 4 
+    Time inferene with 100 loop is 2.1242 s
+    >>>> About: 0.021242 s per 1 loop
+    
+
+INFO 2022-06-07 15:48:02,058 [test.py:test_speed:20]
+
+    Batch size: 4 
+    Time inferene with 100 loop is 2.1162 s
+    >>>> About: 0.021162 s per 1 loop
+    
+
+INFO 2022-06-07 15:50:09,128 [__init__.py:convert:19]
+===> build onnx ...
+
+INFO 2022-06-07 15:50:10,734 [__init__.py:convert:30]
+✅ Convert model pytorch to onnx complete
+
+INFO 2022-06-07 15:51:46,130 [inference.py:<module>:17]
+>>>>> ONNX model <<<<<
+
+INFO 2022-06-07 15:51:49,984 [__init__.py:load:37]
+Load onnx done with cuda
+
+INFO 2022-06-07 15:51:50,779 [__init__.py:postprocess_onnx:78]
+class: Chihuahua , confidence:  81.2464 %, index: 151
+
+INFO 2022-06-07 15:51:50,781 [__init__.py:postprocess_onnx:78]
+class: miniature pinscher , confidence:  15.0776 %, index: 237
+
+INFO 2022-06-07 15:51:50,782 [__init__.py:postprocess_onnx:78]
+class: Italian greyhound , confidence:  1.6573 %, index: 171
+
+INFO 2022-06-07 15:51:50,783 [__init__.py:postprocess_onnx:78]
+class: toy terrier , confidence:  1.0199 %, index: 158
+
+INFO 2022-06-07 15:51:50,783 [__init__.py:inference:51]
+Time for inference:  0.019741 s
+
+INFO 2022-06-07 15:52:18,974 [__init__.py:load:37]
+Load onnx done with cuda
+
+INFO 2022-06-07 15:52:21,307 [test.py:test_speed:19]
+
+    Batch size: 4 
+    Time inferene with 100 loop is 2.3260 s
+    >>>> About: 0.023260 s per 1 loop
+    
+
+INFO 2022-06-07 15:52:35,815 [convert.py:<module>:14]
+Build tensorrt engine...
+
+INFO 2022-06-07 15:52:37,347 [__init__.py:build_engine:71]
+✅ Completed parsing ONNX file
+
+INFO 2022-06-07 15:52:37,348 [__init__.py:build_engine:77]
+===> using dynamic shapes: {'input': ((1, 3, 224, 224), (32, 3, 224, 224), (32, 3, 224, 224))}
+
+INFO 2022-06-07 15:52:37,350 [__init__.py:build_engine:95]
+Creating Tensorrt Engine...
+
+INFO 2022-06-07 15:55:06,457 [__init__.py:build_engine:100]
+===> Serialized Engine Saved at: /home/tari/Desktop/STUDY/Optimization/model_repository/model_trt/1/model.trt
+
+INFO 2022-06-07 15:55:33,976 [inference.py:<module>:17]
+>>>>> TensorRt engine <<<<<
+
+INFO 2022-06-07 15:55:33,979 [inference.py:<module>:18]
+✅ Load tensorrt engine done
+
+INFO 2022-06-07 15:55:33,994 [utils.py:postprocess:37]
+class: Chihuahua , confidence: 81.5375 %, index: 151
+
+INFO 2022-06-07 15:55:33,995 [utils.py:postprocess:37]
+class: miniature pinscher , confidence: 14.7993 %, index: 237
+
+INFO 2022-06-07 15:55:33,996 [utils.py:postprocess:37]
+class: Italian greyhound , confidence: 1.6645 %, index: 171
+
+INFO 2022-06-07 15:55:33,997 [utils.py:postprocess:37]
+class: toy terrier , confidence: 1.0030 %, index: 158
+
+INFO 2022-06-07 15:55:33,999 [inference.py:<module>:24]
+Time for inference:  0.015842 s
+
+INFO 2022-06-07 15:55:49,283 [test.py:<module>:18]
+✅ Load tensorrt engine done
+
+INFO 2022-06-07 15:55:54,983 [test.py:<module>:25]
+
+    Batch size: 32 
+    Time inferene with 100 loop is 5.6553 s
+    >>>> About: 0.056553 s per 1 loop
+    
+
