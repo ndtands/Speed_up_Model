@@ -72,7 +72,6 @@ def postprocess_onnx(output: np.array) -> None:
     indices = np.argsort(confidences)[::-1]
     i = 0
     # print the top classes predicted by the model
-    print('here')
     while confidences[indices[i]] > 0.5:
         class_idx = indices[i]
         logger.info(
