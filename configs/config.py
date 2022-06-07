@@ -5,7 +5,6 @@
 import logging
 import sys
 from pathlib import Path
-from pyrsistent import v
 from rich.logging import RichHandler
 import logging.config as lcfg
 
